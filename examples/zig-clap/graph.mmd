@@ -1,0 +1,199 @@
+graph TD
+    %% Repository Dependencies
+    file__build_2Ezig["build.zig"]
+    style file__build_2Ezig fill:#fff3e0
+    func__build_2Ezig__build["build"]
+    style func__build_2Ezig__build fill:#e1f5fe
+    file__clap_2Ezig["clap.zig"]
+    style file__clap_2Ezig fill:#fff3e0
+    func__clap_2Ezig__Names__longest["longest"]
+    style func__clap_2Ezig__Names__longest fill:#e1f5fe
+    func__clap_2Ezig__Names__prefix["prefix"]
+    style func__clap_2Ezig__Names__prefix fill:#e1f5fe
+    type__clap_2Ezig__Names["Names"]
+    style type__clap_2Ezig__Names fill:#f3e5f5
+    func__clap_2Ezig__Param["Param"]
+    style func__clap_2Ezig__Param fill:#e1f5fe
+    func__clap_2Ezig__parseParams["parseParams"]
+    style func__clap_2Ezig__parseParams fill:#e1f5fe
+    func__clap_2Ezig__parseParamsEx["parseParamsEx"]
+    style func__clap_2Ezig__parseParamsEx fill:#e1f5fe
+    func__clap_2Ezig__parseParamsComptime["parseParamsComptime"]
+    style func__clap_2Ezig__parseParamsComptime fill:#e1f5fe
+    func__clap_2Ezig__countParams["countParams"]
+    style func__clap_2Ezig__countParams fill:#e1f5fe
+    func__clap_2Ezig__parseParamsIntoSlice["parseParamsIntoSlice"]
+    style func__clap_2Ezig__parseParamsIntoSlice fill:#e1f5fe
+    func__clap_2Ezig__parseParamsIntoSliceEx["parseParamsIntoSliceEx"]
+    style func__clap_2Ezig__parseParamsIntoSliceEx fill:#e1f5fe
+    func__clap_2Ezig__parseParamsIntoArrayList["parseParamsIntoArrayList"]
+    style func__clap_2Ezig__parseParamsIntoArrayList fill:#e1f5fe
+    func__clap_2Ezig__parseParamsIntoArrayListEx["parseParamsIntoArrayListEx"]
+    style func__clap_2Ezig__parseParamsIntoArrayListEx fill:#e1f5fe
+    func__clap_2Ezig__parseParam["parseParam"]
+    style func__clap_2Ezig__parseParam fill:#e1f5fe
+    func__clap_2Ezig__parseParamEx["parseParamEx"]
+    style func__clap_2Ezig__parseParamEx fill:#e1f5fe
+    func__clap_2Ezig__testParseParams["testParseParams"]
+    style func__clap_2Ezig__testParseParams fill:#e1f5fe
+    func__clap_2Ezig__expectParam["expectParam"]
+    style func__clap_2Ezig__expectParam fill:#e1f5fe
+    func__clap_2Ezig__Diagnostic__report["report"]
+    style func__clap_2Ezig__Diagnostic__report fill:#e1f5fe
+    func__clap_2Ezig__Diagnostic__reportToFile["reportToFile"]
+    style func__clap_2Ezig__Diagnostic__reportToFile fill:#e1f5fe
+    type__clap_2Ezig__Diagnostic["Diagnostic"]
+    style type__clap_2Ezig__Diagnostic fill:#f3e5f5
+    func__clap_2Ezig__testDiag["testDiag"]
+    style func__clap_2Ezig__testDiag fill:#e1f5fe
+    type__clap_2Ezig__ParseOptions["ParseOptions"]
+    style type__clap_2Ezig__ParseOptions fill:#f3e5f5
+    func__clap_2Ezig__parse["parse"]
+    style func__clap_2Ezig__parse fill:#e1f5fe
+    func__clap_2Ezig__Result["Result"]
+    style func__clap_2Ezig__Result fill:#e1f5fe
+    func__clap_2Ezig__parseEx["parseEx"]
+    style func__clap_2Ezig__parseEx fill:#e1f5fe
+    func__clap_2Ezig__ResultEx["ResultEx"]
+    style func__clap_2Ezig__ResultEx fill:#e1f5fe
+    func__clap_2Ezig__Positionals["Positionals"]
+    style func__clap_2Ezig__Positionals fill:#e1f5fe
+    func__clap_2Ezig__initPositionals["initPositionals"]
+    style func__clap_2Ezig__initPositionals fill:#e1f5fe
+    func__clap_2Ezig__deinitPositionals["deinitPositionals"]
+    style func__clap_2Ezig__deinitPositionals fill:#e1f5fe
+    func__clap_2Ezig__ParamType["ParamType"]
+    style func__clap_2Ezig__ParamType fill:#e1f5fe
+    func__clap_2Ezig__deinitArgs["deinitArgs"]
+    style func__clap_2Ezig__deinitArgs fill:#e1f5fe
+    func__clap_2Ezig__Arguments["Arguments"]
+    style func__clap_2Ezig__Arguments fill:#e1f5fe
+    func__clap_2Ezig__testErr["testErr"]
+    style func__clap_2Ezig__testErr fill:#e1f5fe
+    func__clap_2Ezig__Help__description["description"]
+    style func__clap_2Ezig__Help__description fill:#e1f5fe
+    func__clap_2Ezig__Help__value["value"]
+    style func__clap_2Ezig__Help__value fill:#e1f5fe
+    type__clap_2Ezig__Help["Help"]
+    style type__clap_2Ezig__Help fill:#f3e5f5
+    type__clap_2Ezig__HelpOptions["HelpOptions"]
+    style type__clap_2Ezig__HelpOptions fill:#f3e5f5
+    func__clap_2Ezig__helpToFile["helpToFile"]
+    style func__clap_2Ezig__helpToFile fill:#e1f5fe
+    func__clap_2Ezig__help["help"]
+    style func__clap_2Ezig__help fill:#e1f5fe
+    func__clap_2Ezig__DescriptionWriter__writeWord["writeWord"]
+    style func__clap_2Ezig__DescriptionWriter__writeWord fill:#e1f5fe
+    func__clap_2Ezig__DescriptionWriter__newline["newline"]
+    style func__clap_2Ezig__DescriptionWriter__newline fill:#e1f5fe
+    func__clap_2Ezig__DescriptionWriter__ensureIndented["ensureIndented"]
+    style func__clap_2Ezig__DescriptionWriter__ensureIndented fill:#e1f5fe
+    type__clap_2Ezig__DescriptionWriter["DescriptionWriter"]
+    style type__clap_2Ezig__DescriptionWriter fill:#f3e5f5
+    func__clap_2Ezig__printParam["printParam"]
+    style func__clap_2Ezig__printParam fill:#e1f5fe
+    func__clap_2Ezig__testHelp["testHelp"]
+    style func__clap_2Ezig__testHelp fill:#e1f5fe
+    func__clap_2Ezig__usageToFile["usageToFile"]
+    style func__clap_2Ezig__usageToFile fill:#e1f5fe
+    func__clap_2Ezig__usage["usage"]
+    style func__clap_2Ezig__usage fill:#e1f5fe
+    func__clap_2Ezig__testUsage["testUsage"]
+    style func__clap_2Ezig__testUsage fill:#e1f5fe
+    file__clap_2Fargs_2Ezig["clap/args.zig"]
+    style file__clap_2Fargs_2Ezig fill:#fff3e0
+    func__clap_2Fargs_2Ezig__ExampleArgIterator__next["next"]
+    style func__clap_2Fargs_2Ezig__ExampleArgIterator__next fill:#e1f5fe
+    type__clap_2Fargs_2Ezig__ExampleArgIterator["ExampleArgIterator"]
+    style type__clap_2Fargs_2Ezig__ExampleArgIterator fill:#f3e5f5
+    func__clap_2Fargs_2Ezig__SliceIterator__next["next"]
+    style func__clap_2Fargs_2Ezig__SliceIterator__next fill:#e1f5fe
+    type__clap_2Fargs_2Ezig__SliceIterator["SliceIterator"]
+    style type__clap_2Fargs_2Ezig__SliceIterator fill:#f3e5f5
+    file__clap_2Fcodepoint__counting__writer_2Ezig["clap/codepoint_counting_writer.zig"]
+    style file__clap_2Fcodepoint__counting__writer_2Ezig fill:#fff3e0
+    func__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter__init["init"]
+    style func__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter__init fill:#e1f5fe
+    func__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter__drain["drain"]
+    style func__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter__drain fill:#e1f5fe
+    type__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter["CodepointCountingWriter"]
+    style type__clap_2Fcodepoint__counting__writer_2Ezig__CodepointCountingWriter fill:#f3e5f5
+    func__clap_2Fcodepoint__counting__writer_2Ezig__utf8CountCodepointsAllowTruncate["utf8CountCodepointsAllowTruncate"]
+    style func__clap_2Fcodepoint__counting__writer_2Ezig__utf8CountCodepointsAllowTruncate fill:#e1f5fe
+    file__clap_2Fparsers_2Ezig["clap/parsers.zig"]
+    style file__clap_2Fparsers_2Ezig fill:#fff3e0
+    func__clap_2Fparsers_2Ezig__string["string"]
+    style func__clap_2Fparsers_2Ezig__string fill:#e1f5fe
+    func__clap_2Fparsers_2Ezig__int["int"]
+    style func__clap_2Fparsers_2Ezig__int fill:#e1f5fe
+    func__clap_2Fparsers_2Ezig__float["float"]
+    style func__clap_2Fparsers_2Ezig__float fill:#e1f5fe
+    func__clap_2Fparsers_2Ezig__enumeration["enumeration"]
+    style func__clap_2Fparsers_2Ezig__enumeration fill:#e1f5fe
+    func__clap_2Fparsers_2Ezig__ReturnType["ReturnType"]
+    style func__clap_2Fparsers_2Ezig__ReturnType fill:#e1f5fe
+    func__clap_2Fparsers_2Ezig__Result["Result"]
+    style func__clap_2Fparsers_2Ezig__Result fill:#e1f5fe
+    file__clap_2Fstreaming_2Ezig["clap/streaming.zig"]
+    style file__clap_2Fstreaming_2Ezig fill:#fff3e0
+    func__clap_2Fstreaming_2Ezig__Arg["Arg"]
+    style func__clap_2Fstreaming_2Ezig__Arg fill:#e1f5fe
+    func__clap_2Fstreaming_2Ezig__Clap["Clap"]
+    style func__clap_2Fstreaming_2Ezig__Clap fill:#e1f5fe
+    func__clap_2Fstreaming_2Ezig__expectArgs["expectArgs"]
+    style func__clap_2Fstreaming_2Ezig__expectArgs fill:#e1f5fe
+    func__clap_2Fstreaming_2Ezig__expectError["expectError"]
+    style func__clap_2Fstreaming_2Ezig__expectError fill:#e1f5fe
+    file__example_2Fhelp_2Ezig["example/help.zig"]
+    style file__example_2Fhelp_2Ezig fill:#fff3e0
+    func__example_2Fhelp_2Ezig__main["main"]
+    style func__example_2Fhelp_2Ezig__main fill:#e1f5fe
+    file__example_2Fsimple_2Dex_2Ezig["example/simple-ex.zig"]
+    style file__example_2Fsimple_2Dex_2Ezig fill:#fff3e0
+    func__example_2Fsimple_2Dex_2Ezig__main["main"]
+    style func__example_2Fsimple_2Dex_2Ezig__main fill:#e1f5fe
+    file__example_2Fsimple_2Ezig["example/simple.zig"]
+    style file__example_2Fsimple_2Ezig fill:#fff3e0
+    func__example_2Fsimple_2Ezig__main["main"]
+    style func__example_2Fsimple_2Ezig__main fill:#e1f5fe
+    file__example_2Fstreaming_2Dclap_2Ezig["example/streaming-clap.zig"]
+    style file__example_2Fstreaming_2Dclap_2Ezig fill:#fff3e0
+    func__example_2Fstreaming_2Dclap_2Ezig__main["main"]
+    style func__example_2Fstreaming_2Dclap_2Ezig__main fill:#e1f5fe
+    file__example_2Fsubcommands_2Ezig["example/subcommands.zig"]
+    style file__example_2Fsubcommands_2Ezig fill:#fff3e0
+    func__example_2Fsubcommands_2Ezig__main["main"]
+    style func__example_2Fsubcommands_2Ezig__main fill:#e1f5fe
+    func__example_2Fsubcommands_2Ezig__mathMain["mathMain"]
+    style func__example_2Fsubcommands_2Ezig__mathMain fill:#e1f5fe
+    file__example_2Fusage_2Ezig["example/usage.zig"]
+    style file__example_2Fusage_2Ezig fill:#fff3e0
+    func__example_2Fusage_2Ezig__main["main"]
+    style func__example_2Fusage_2Ezig__main fill:#e1f5fe
+    file__std["std"]
+    file__builtin["builtin"]
+    file__clap["clap"]
+    file__build_2Ezig -->|comptime| file__std
+    file__clap_2Ezig --> file__clap_2Fargs_2Ezig
+    file__clap_2Ezig --> file__clap_2Fparsers_2Ezig
+    file__clap_2Ezig --> file__clap_2Fstreaming_2Ezig
+    file__clap_2Ezig --> file__clap_2Fcodepoint__counting__writer_2Ezig
+    file__clap_2Ezig -->|comptime| file__std
+    file__clap_2Fargs_2Ezig -->|comptime| file__std
+    file__clap_2Fcodepoint__counting__writer_2Ezig -->|comptime| file__builtin
+    file__clap_2Fcodepoint__counting__writer_2Ezig -->|comptime| file__std
+    file__clap_2Fparsers_2Ezig -->|comptime| file__std
+    file__clap_2Fstreaming_2Ezig --> file__clap_2Ezig
+    file__clap_2Fstreaming_2Ezig -->|comptime| file__std
+    file__example_2Fhelp_2Ezig --> file__clap
+    file__example_2Fhelp_2Ezig -->|comptime| file__std
+    file__example_2Fsimple_2Dex_2Ezig --> file__clap
+    file__example_2Fsimple_2Dex_2Ezig -->|comptime| file__std
+    file__example_2Fsimple_2Ezig --> file__clap
+    file__example_2Fsimple_2Ezig -->|comptime| file__std
+    file__example_2Fstreaming_2Dclap_2Ezig --> file__clap
+    file__example_2Fstreaming_2Dclap_2Ezig -->|comptime| file__std
+    file__example_2Fsubcommands_2Ezig --> file__clap
+    file__example_2Fsubcommands_2Ezig -->|comptime| file__std
+    file__example_2Fusage_2Ezig --> file__clap
+    file__example_2Fusage_2Ezig -->|comptime| file__std

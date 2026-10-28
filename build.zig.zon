@@ -1,0 +1,17 @@
+.{
+    .fingerprint = 0xc2381f69fa9f2252,
+    .name = .repo2mmd,
+    .version = "0.1.0",
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "test",
+        "plugins",
+        "include",
+        "LICENSE",
+        "README.md",
+    },
+}

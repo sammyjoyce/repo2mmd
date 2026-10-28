@@ -1,0 +1,133 @@
+```mermaid
+graph TD
+    title "Repository Dependencies"
+    ts_file_index_ts_1_1["index.ts"]
+    style ts_file_index_ts_1_1 fill:#fff3e0
+    ts_file_auth_ts_1_1["auth.ts"]
+    style ts_file_auth_ts_1_1 fill:#fff3e0
+    ts_interface_User_3_18["User"]
+    style ts_interface_User_3_18 fill:#f3e5f5
+    ts_class_AuthError_9_14["AuthError"]
+    style ts_class_AuthError_9_14 fill:#f3e5f5
+    ts_func_authenticate_19_23["authenticate"]
+    style ts_func_authenticate_19_23 fill:#e1f5fe
+    ts_func_hashPassword_32_17["hashPassword"]
+    style ts_func_hashPassword_32_17 fill:#e1f5fe
+    ts_func_verifyPassword_36_17["verifyPassword"]
+    style ts_func_verifyPassword_36_17 fill:#e1f5fe
+    ts_class_AuthService_41_14["AuthService"]
+    style ts_class_AuthService_41_14 fill:#f3e5f5
+    ts_file_database_ts_1_1["database.ts"]
+    style ts_file_database_ts_1_1 fill:#fff3e0
+    ts_interface_UserSettings_1_18["UserSettings"]
+    style ts_interface_UserSettings_1_18 fill:#f3e5f5
+    ts_interface_UserData_6_18["UserData"]
+    style ts_interface_UserData_6_18 fill:#f3e5f5
+    ts_class_Database_11_14["Database"]
+    style ts_class_Database_11_14 fill:#f3e5f5
+    ts_class_DatabaseService_64_14["DatabaseService"]
+    style ts_class_DatabaseService_64_14 fill:#f3e5f5
+    ts_file_index_ts_1_1 --> ts_module__auth
+    ts_file_index_ts_1_1 --> ts_module__database
+    ts_file_index_ts_1_1 --> ts_type__
+    ts_file_index_ts_1_1 --> ts_func_console_error
+    ts_file_index_ts_1_1 --> ts_func_process_exit
+    ts_file_index_ts_1_1 --> ts_type_Database
+    ts_file_index_ts_1_1 --> ts_type_Database
+    ts_file_index_ts_1_1 --> ts_func_authenticate
+    ts_file_index_ts_1_1 --> ts_func_console_log
+    ts_file_index_ts_1_1 --> ts_func_runApp
+    ts_file_index_ts_1_1 --> ts_func_console_error
+    ts_file_index_ts_1_1 --> ts_func_process_exit
+    ts_file_index_ts_1_1 --> ts_func_db_cleanup
+    ts_file_index_ts_1_1 --> ts_type__
+    ts_file_index_ts_1_1 --> ts_type__
+    ts_file_index_ts_1_1 --> ts_type__
+    ts_file_index_ts_1_1 --> ts_func_db_queryUser
+    ts_file_index_ts_1_1 --> ts_func_console_log
+    ts_file_index_ts_1_1 --> ts_func_console_log
+    ts_file_index_ts_1_1 --> ts_func_main_catch
+    ts_file_index_ts_1_1 --> ts_func_main
+    ts_file_auth_ts_1_1 --> ts_module_crypto
+    ts_file_auth_ts_1_1 --- ts_interface_User_3_18
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --- ts_class_AuthError_9_14
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --- ts_func_authenticate_19_23
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_auth_ts_1_1 --- ts_func_hashPassword_32_17
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_func_crypto_createHashsha256_updatepassword_digest
+    ts_file_auth_ts_1_1 --> ts_func_crypto_createHashsha256_update
+    ts_file_auth_ts_1_1 --> ts_func_crypto_createHash
+    ts_file_auth_ts_1_1 --- ts_func_verifyPassword_36_17
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_func_hashPassword
+    ts_file_auth_ts_1_1 --- ts_class_AuthService_41_14
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type_Map
+    ts_file_auth_ts_1_1 --> ts_type_Map
+    ts_file_auth_ts_1_1 --> ts_func_this_users_set
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_type__
+    ts_file_auth_ts_1_1 --> ts_func_this_users_get
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_auth_ts_1_1 --> ts_type_AuthError
+    ts_file_database_ts_1_1 --- ts_interface_UserSettings_1_18
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --- ts_interface_UserData_6_18
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --- ts_class_Database_11_14
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_func_console_log
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_type_Error
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_Math_floor
+    ts_file_database_ts_1_1 --> ts_func_Math_random
+    ts_file_database_ts_1_1 --> ts_func_this_saveUser
+    ts_file_database_ts_1_1 --- ts_class_DatabaseService_64_14
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type_Database
+    ts_file_database_ts_1_1 --> ts_type_Database
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_this_db_init
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_this_db_cleanup
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_this_db_queryUser
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_this_db_queryUser
+    ts_file_database_ts_1_1 --> ts_type__
+    ts_file_database_ts_1_1 --> ts_func_this_db_saveUser
+```

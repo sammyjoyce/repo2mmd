@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "ts_file_index.ts_1_1",
+        "lang": "typescript",
+        "kind": "File",
+        "name": "index.ts",
+        "fqname": "index.ts",
+        "file": "index.ts",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 9
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_file_auth.ts_1_1",
+        "lang": "typescript",
+        "kind": "File",
+        "name": "auth.ts",
+        "fqname": "auth.ts",
+        "file": "auth.ts",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 8
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_interface_User_3_18",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "User",
+        "fqname": "User",
+        "file": "auth.ts",
+        "range": {
+          "l0": 3,
+          "c0": 18,
+          "l1": 3,
+          "c1": 22
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_class_AuthError_9_14",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "AuthError",
+        "fqname": "AuthError",
+        "file": "auth.ts",
+        "range": {
+          "l0": 9,
+          "c0": 14,
+          "l1": 9,
+          "c1": 23
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_func_authenticate_19_23",
+        "lang": "typescript",
+        "kind": "Func",
+        "name": "authenticate",
+        "fqname": "authenticate",
+        "file": "auth.ts",
+        "range": {
+          "l0": 19,
+          "c0": 23,
+          "l1": 19,
+          "c1": 35
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_func_hashPassword_32_17",
+        "lang": "typescript",
+        "kind": "Func",
+        "name": "hashPassword",
+        "fqname": "hashPassword",
+        "file": "auth.ts",
+        "range": {
+          "l0": 32,
+          "c0": 17,
+          "l1": 32,
+          "c1": 29
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_func_verifyPassword_36_17",
+        "lang": "typescript",
+        "kind": "Func",
+        "name": "verifyPassword",
+        "fqname": "verifyPassword",
+        "file": "auth.ts",
+        "range": {
+          "l0": 36,
+          "c0": 17,
+          "l1": 36,
+          "c1": 31
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_class_AuthService_41_14",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "AuthService",
+        "fqname": "AuthService",
+        "file": "auth.ts",
+        "range": {
+          "l0": 41,
+          "c0": 14,
+          "l1": 41,
+          "c1": 25
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_file_database.ts_1_1",
+        "lang": "typescript",
+        "kind": "File",
+        "name": "database.ts",
+        "fqname": "database.ts",
+        "file": "database.ts",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 12
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_interface_UserSettings_1_18",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "UserSettings",
+        "fqname": "UserSettings",
+        "file": "database.ts",
+        "range": {
+          "l0": 1,
+          "c0": 18,
+          "l1": 1,
+          "c1": 30
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_interface_UserData_6_18",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "UserData",
+        "fqname": "UserData",
+        "file": "database.ts",
+        "range": {
+          "l0": 6,
+          "c0": 18,
+          "l1": 6,
+          "c1": 26
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_class_Database_11_14",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "Database",
+        "fqname": "Database",
+        "file": "database.ts",
+        "range": {
+          "l0": 11,
+          "c0": 14,
+          "l1": 11,
+          "c1": 22
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      },
+      {
+        "id": "ts_class_DatabaseService_64_14",
+        "lang": "typescript",
+        "kind": "Type",
+        "name": "DatabaseService",
+        "fqname": "DatabaseService",
+        "file": "database.ts",
+        "range": {
+          "l0": 64,
+          "c0": 14,
+          "l1": 64,
+          "c1": 29
+        },
+        "visibility": "Public",
+        "origin_plugin": "typescript",
+        "tags": []
+      }
+    ],
+    "edges": [
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_module_./auth",
+        "rel": "Imports",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_module_./database",
+        "rel": "Imports",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_console.error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_process.exit",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_Database",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_Database",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_authenticate",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_console.log",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_runApp",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_console.error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_process.exit",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_db.cleanup",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_db.queryUser",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_console.log",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_console.log",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_main().catch",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_index.ts_1_1",
+        "dst": "ts_func_main",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_module_crypto",
+        "rel": "Imports",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_interface_User_3_18",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_class_AuthError_9_14",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_authenticate_19_23",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_hashPassword_32_17",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_crypto.createHash('sha256').update(password).digest",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_crypto.createHash('sha256').update",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_crypto.createHash",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_verifyPassword_36_17",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_hashPassword",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_class_AuthService_41_14",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_Map",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_Map",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_this.users.set",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_func_this.users.get",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_auth.ts_1_1",
+        "dst": "ts_type_AuthError",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_interface_UserSettings_1_18",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_interface_UserData_6_18",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_class_Database_11_14",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_console.log",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Error",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_Math.floor",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_Math.random",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.saveUser",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_class_DatabaseService_64_14",
+        "rel": "Contains",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Database",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_Database",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.db.init",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.db.cleanup",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.db.queryUser",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.db.queryUser",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_type_:",
+        "rel": "Calls",
+        "certainty": "Static"
+      },
+      {
+        "src": "ts_file_database.ts_1_1",
+        "dst": "ts_func_this.db.saveUser",
+        "rel": "Calls",
+        "certainty": "Static"
+      }
+    ]
+  },
+  "manifest": {
+    "generated_at": "2024-01-01T00:00:00Z",
+    "generator_version": "0.1.0",
+    "graph_type": "Deps",
+    "input_root": "test/fixtures/typescript",
+    "schema_version": 1,
+    "node_count": 13,
+    "edge_count": 103,
+    "unresolved_refs": 0,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "plugins_used": [],
+    "cli_args": []
+  },
+  "diagnostics": [
+  ]
+}

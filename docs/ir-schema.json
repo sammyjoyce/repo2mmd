@@ -1,0 +1,321 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sammyjoyce/repo2mmd/docs/ir-schema.json",
+  "title": "repo2mmd IR Schema",
+  "description": "Intermediate representation schema for repo2mmd repository analysis",
+  "type": "object",
+  "required": ["schema_version", "graph", "manifest", "diagnostics"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Schema version number"
+    },
+    "graph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node"
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/edge"
+          }
+        }
+      }
+    },
+    "manifest": {
+      "$ref": "#/definitions/graph_manifest"
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/diagnostic"
+      }
+    }
+  },
+  "definitions": {
+    "node": {
+      "type": "object",
+      "required": ["id", "lang", "kind", "name", "fqname", "file", "range", "visibility", "origin_plugin", "tags"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$",
+          "description": "Hex-encoded 64-bit ID"
+        },
+        "lang": {
+          "type": "string",
+          "enum": ["zig", "c", "ts"],
+          "description": "Language identifier"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["module", "file", "type", "func", "var"],
+          "description": "Node kind"
+        },
+        "name": {
+          "type": "string",
+          "description": "Short display name"
+        },
+        "fqname": {
+          "type": "string",
+          "description": "Fully-qualified name"
+        },
+        "file": {
+          "type": "string",
+          "description": "Repository-relative path"
+        },
+        "range": {
+          "$ref": "#/definitions/range"
+        },
+        "signature": {
+          "type": ["string", "null"],
+          "description": "Optional function/type signature"
+        },
+        "visibility": {
+          "type": "string",
+          "enum": ["public", "private", "package"],
+          "description": "Visibility level"
+        },
+        "origin_plugin": {
+          "type": "string",
+          "description": "Plugin identifier"
+        },
+        "module_id": {
+          "type": ["string", "null"],
+          "description": "Module identifier"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Free-form grouping hints"
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["src", "dst", "rel", "certainty", "certainty_reason", "evidence_paths", "evidence_lines", "diagnostics"],
+      "properties": {
+        "src": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$",
+          "description": "Source node ID"
+        },
+        "dst": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$",
+          "description": "Destination node ID"
+        },
+        "rel": {
+          "type": "string",
+          "enum": ["imports", "includes", "calls", "contains", "extends", "implements"],
+          "description": "Relationship type"
+        },
+        "certainty": {
+          "type": "string",
+          "enum": ["static", "indirect", "dynamic", "comptime", "unknown"],
+          "description": "Certainty level"
+        },
+        "certainty_reason": {
+          "type": ["string", "null"],
+          "description": "Human-readable explanation of certainty"
+        },
+        "evidence_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "File paths containing evidence"
+        },
+        "evidence_lines": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "description": "Line numbers parallel to evidence_paths"
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/diagnostic_ref"
+          },
+          "description": "Diagnostic references"
+        }
+      }
+    },
+    "range": {
+      "type": "object",
+      "required": ["l0", "c0", "l1", "c1"],
+      "properties": {
+        "l0": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Start line (1-based)"
+        },
+        "c0": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Start column (1-based)"
+        },
+        "l1": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "End line (1-based)"
+        },
+        "c1": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "End column (1-based)"
+        }
+      }
+    },
+    "diagnostic_ref": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Diagnostic identifier"
+        }
+      }
+    },
+    "graph_manifest": {
+      "type": "object",
+      "required": ["generated_at", "generator_version", "graph_type", "input_root", "schema_version", "node_count", "edge_count", "unresolved_refs", "cache_hits", "cache_misses", "plugins_used", "cli_args"],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "description": "Timestamp string"
+        },
+        "generator_version": {
+          "type": "string",
+          "description": "repo2mmd version"
+        },
+        "graph_type": {
+          "type": "string",
+          "enum": ["deps", "call", "class", "include"],
+          "description": "Graph type"
+        },
+        "input_root": {
+          "type": "string",
+          "description": "Absolute path of analyzed root"
+        },
+        "schema_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Schema version"
+        },
+        "node_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of nodes"
+        },
+        "edge_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of edges"
+        },
+        "unresolved_refs": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of unresolved references"
+        },
+        "cache_hits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of cache hits"
+        },
+        "cache_misses": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of cache misses"
+        },
+        "plugins_used": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/plugin_summary"
+          },
+          "description": "Active plugin versions"
+        },
+        "cli_args": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "CLI arguments"
+        }
+      }
+    },
+    "plugin_summary": {
+      "type": "object",
+      "required": ["id", "version", "schema_min", "schema_max"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Plugin identifier"
+        },
+        "version": {
+          "type": "string",
+          "description": "Plugin version"
+        },
+        "schema_min": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Minimum schema version supported"
+        },
+        "schema_max": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum schema version supported"
+        }
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "required": ["id", "severity", "code", "message", "file", "range", "plugin"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Diagnostic identifier"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["info", "warn", "error"],
+          "description": "Severity level"
+        },
+        "code": {
+          "type": "string",
+          "description": "Machine-readable code"
+        },
+        "message": {
+          "type": "string",
+          "description": "Human-readable description"
+        },
+        "file": {
+          "type": ["string", "null"],
+          "description": "Associated file path"
+        },
+        "range": {
+          "anyOf": [
+            { "$ref": "#/definitions/range" },
+            { "type": "null" }
+          ],
+          "description": "Location range"
+        },
+        "plugin": {
+          "type": ["string", "null"],
+          "description": "Originating plugin ID"
+        }
+      }
+    }
+  }
+}

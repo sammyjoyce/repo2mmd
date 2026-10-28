@@ -1,0 +1,74 @@
+# Zig build artifacts
+zig-out/
+.zig-cache/
+zig-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build artifacts
+*.o
+*.a
+*.so
+main
+*.dylib
+*.dll
+
+# Test artifacts
+*.pid
+*.log
+/test_*
+!/test_synth_repo/
+test_output/
+
+# Configuration
+config.json
+
+# Local tooling artifacts
+.code/
+.zig-global-cache/
+
+# CLI output artifacts (do not commit)
+/.repo2mmd/
+/bin/
+/dist/
+/output.mmd
+/-
+/debug*.mmd
+/debug_ts
+/debug_ts.c
+/repo2mmd.json
+/repo2mmd.mmd
+/repo2mmd.toml
+/synth_test.json
+/synth_test.mmd
+/test*.json
+/test*.mmd
+/test*.ts
+/test*.zig
+/test.txt
+/tmp.zig
+/scratch.zig
+/test_dir/
+/test_debug/*.json
+/test_debug/*.toml
+/test_repo/*.json
+/test_repo/*.mmd
+/test-repo/*.json
+/test-repo/*.mmd
+/test_synth_repo/*.json
+/test_synth_repo/*.mmd
+/test_ts_dir/*.json
+/test_ts_dir/*.mmd
+/*.json
+!/.markdownlint.json
+/*.mmd
+/*.ts

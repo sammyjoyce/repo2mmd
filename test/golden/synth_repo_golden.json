@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "file_src/main.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "src/main.zig",
+        "fqname": "src/main.zig",
+        "file": "src/main.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_src/main.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "src/main.zig",
+        "range": {
+          "l0": 6,
+          "c0": 1,
+          "l1": 6,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_src/auth.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "src/auth.zig",
+        "fqname": "src/auth.zig",
+        "file": "src/auth.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_src/auth.zig_init",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "init",
+        "fqname": "init",
+        "file": "src/auth.zig",
+        "range": {
+          "l0": 7,
+          "c0": 1,
+          "l1": 7,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_src/auth.zig_authenticate",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "authenticate",
+        "fqname": "authenticate",
+        "file": "src/auth.zig",
+        "range": {
+          "l0": 14,
+          "c0": 1,
+          "l1": 14,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_src/auth.zig_User",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "User",
+        "fqname": "User",
+        "file": "src/auth.zig",
+        "range": {
+          "l0": 3,
+          "c0": 1,
+          "l1": 3,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_src/database.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "src/database.zig",
+        "fqname": "src/database.zig",
+        "file": "src/database.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_src/database.zig_connect",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "connect",
+        "fqname": "connect",
+        "file": "src/database.zig",
+        "range": {
+          "l0": 6,
+          "c0": 1,
+          "l1": 6,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_src/database.zig_query",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "query",
+        "fqname": "query",
+        "file": "src/database.zig",
+        "range": {
+          "l0": 15,
+          "c0": 1,
+          "l1": 15,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_src/database.zig_Database",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "Database",
+        "fqname": "Database",
+        "file": "src/database.zig",
+        "range": {
+          "l0": 3,
+          "c0": 1,
+          "l1": 3,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      }
+    ],
+    "edges": [
+      {
+        "src": "file_src/main.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime"
+      },
+      {
+        "src": "file_src/main.zig",
+        "dst": "file_src/auth.zig",
+        "rel": "Imports",
+        "certainty": "Static"
+      },
+      {
+        "src": "file_src/main.zig",
+        "dst": "file_src/database.zig",
+        "rel": "Imports",
+        "certainty": "Static"
+      },
+      {
+        "src": "file_src/auth.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime"
+      },
+      {
+        "src": "file_src/database.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime"
+      }
+    ]
+  },
+  "manifest": {
+    "generated_at": "2024-01-01T00:00:00Z",
+    "generator_version": "0.1.0",
+    "graph_type": "Deps",
+    "input_root": "<REPO_ROOT>/test_synth_repo",
+    "schema_version": 1,
+    "node_count": 10,
+    "edge_count": 5,
+    "resolved_refs": 5,
+    "unresolved_refs": 0,
+    "resolution_rate": 100.0,
+    "cache_hits": 3,
+    "cache_misses": 0,
+    "plugins_used": [
+          {
+        "id": "zig",
+        "version": "0.1.0",
+          "schema_min": 1,
+          "schema_max": 1
+          },
+          {
+        "id": "typescript",
+        "version": "0.3.0",
+          "schema_min": 1,
+          "schema_max": 1
+          },
+          {
+        "id": "dummy",
+        "version": "0.1.0",
+          "schema_min": 1,
+          "schema_max": 1
+          }
+        ],
+    "cli_args": []
+  },
+  "diagnostics": [
+  ]
+}

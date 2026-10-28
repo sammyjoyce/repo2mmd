@@ -1,0 +1,62 @@
+[
+  {
+    "src": "file_clap.zig",
+    "dst": "file_clap/args.zig",
+    "rel": "Imports",
+    "certainty": "Static",
+    "evidence_paths": [
+      "clap.zig"
+    ],
+    "evidence_lines": [
+      2195
+    ]
+  },
+  {
+    "src": "file_clap.zig",
+    "dst": "file_clap/parsers.zig",
+    "rel": "Imports",
+    "certainty": "Static",
+    "evidence_paths": [
+      "clap.zig"
+    ],
+    "evidence_lines": [
+      2196
+    ]
+  },
+  {
+    "src": "file_clap.zig",
+    "dst": "file_clap/streaming.zig",
+    "rel": "Imports",
+    "certainty": "Static",
+    "evidence_paths": [
+      "clap.zig"
+    ],
+    "evidence_lines": [
+      2197
+    ]
+  },
+  {
+    "src": "file_clap.zig",
+    "dst": "file_clap/codepoint_counting_writer.zig",
+    "rel": "Imports",
+    "certainty": "Static",
+    "evidence_paths": [
+      "clap.zig"
+    ],
+    "evidence_lines": [
+      2198
+    ]
+  },
+  {
+    "src": "file_clap.zig",
+    "dst": "file_std",
+    "rel": "Imports",
+    "certainty": "Comptime",
+    "evidence_paths": [
+      "clap.zig"
+    ],
+    "evidence_lines": [
+      2200
+    ]
+  }
+]

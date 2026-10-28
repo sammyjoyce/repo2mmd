@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "1de73a93c00a6bab",
+        "lang": "zig",
+        "kind": "module",
+        "name": "main.zig",
+        "fqname": "test/fixtures/zig/main.zig",
+        "file": "1de73a93c00a6bab",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "public",
+        "origin_plugin": "builtin"
+      },
+      {
+        "id": "93eaa8e1bafbf4bd",
+        "lang": "zig",
+        "kind": "module",
+        "name": "auth.zig",
+        "fqname": "test/fixtures/zig/auth.zig",
+        "file": "93eaa8e1bafbf4bd",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "public",
+        "origin_plugin": "builtin"
+      },
+      {
+        "id": "aba411832508af51",
+        "lang": "zig",
+        "kind": "module",
+        "name": "database.zig",
+        "fqname": "test/fixtures/zig/database.zig",
+        "file": "aba411832508af51",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "public",
+        "origin_plugin": "builtin"
+      }
+    ],
+    "edges": [
+      {
+        "src": "1de73a93c00a6bab",
+        "dst": "93eaa8e1bafbf4bd",
+        "rel": "imports",
+        "certainty": "static",
+        "evidence_paths": ["test/fixtures/zig/main.zig"],
+        "evidence_lines": [1]
+      },
+      {
+        "src": "1de73a93c00a6bab",
+        "dst": "aba411832508af51",
+        "rel": "imports",
+        "certainty": "static",
+        "evidence_paths": ["test/fixtures/zig/main.zig"],
+        "evidence_lines": [1]
+      }
+    ]
+  },
+  "manifest": {
+        "generated_at": "1759821643",
+        "generator_version": "0.15.1",
+        "graph_type": "Deps",
+        "input_root": "test/fixtures/zig",
+        "schema_version": 1,
+        "node_count": 3,
+        "edge_count": 2,
+        "unresolved_refs": 0,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "plugins_used": []
+      },
+  "diagnostics": []
+}

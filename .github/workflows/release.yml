@@ -1,0 +1,55 @@
+name: Release
+
+# Pushing a vX.Y.Z tag builds the archives with scripts/release.sh, runs the
+# macOS arm64 archive on a real Mac, and opens a draft GitHub Release for review.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: mlugg/setup-zig@v2.0.5
+      - run: ./scripts/release.sh "$GITHUB_REF_NAME"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  smoke-macos:
+    needs: build
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Run the arm64 archive on the Zig fixture
+        run: |
+          tar xzf dist/repo2mmd-*-aarch64-macos.tar.gz
+          ./repo2mmd-*-aarch64-macos/bin/repo2mmd --version
+          ./repo2mmd-*-aarch64-macos/bin/repo2mmd --cache-mode off test/fixtures/zig -o graph.json
+          test "$(grep -c '"evidence_lines": \[[0-9]' graph.json)" -gt 0
+
+  publish:
+    needs: [build, smoke-macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - run: gh release create "$GITHUB_REF_NAME" dist/* --draft --verify-tag --title "repo2mmd $GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}

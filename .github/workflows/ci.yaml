@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # No version input: setup-zig installs minimum_zig_version from build.zig.zon.
+      - uses: mlugg/setup-zig@v2.0.5
+
+      - run: zig build fmt-check
+      - run: zig build test
+      - run: zig build plugins test-plugin-loader test-fixtures
+      - run: ./zig-out/bin/repo2mmd --version
+
+  example:
+    name: README example is reproducible
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: mlugg/setup-zig@v2.0.5
+      - run: zig build
+      - run: ./scripts/example.sh
+      - run: git status --porcelain -- examples/ && test -z "$(git status --porcelain -- examples/)"
+
+  release-dry-run:
+    name: Release archives build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: mlugg/setup-zig@v2.0.5
+      - run: ./scripts/release.sh
+
+  secrets-scan:
+    name: Secrets scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

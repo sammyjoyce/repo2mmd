@@ -1,0 +1,1677 @@
+{
+  "schema_version": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "file_build.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "build.zig",
+        "fqname": "build.zig",
+        "file": "build.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_build.zig_build",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "build",
+        "fqname": "build",
+        "file": "build.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_clap.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "clap.zig",
+        "fqname": "clap.zig",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Names_longest",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "longest",
+        "fqname": "Names.longest",
+        "file": "clap.zig",
+        "range": {
+          "l0": 12,
+          "c0": 1,
+          "l1": 12,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Names_prefix",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "prefix",
+        "fqname": "Names.prefix",
+        "file": "clap.zig",
+        "range": {
+          "l0": 31,
+          "c0": 1,
+          "l1": 31,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_Names",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "Names",
+        "fqname": "Names",
+        "file": "clap.zig",
+        "range": {
+          "l0": 4,
+          "c0": 1,
+          "l1": 39,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Param",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Param",
+        "fqname": "Param",
+        "file": "clap.zig",
+        "range": {
+          "l0": 69,
+          "c0": 1,
+          "l1": 69,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParams",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParams",
+        "fqname": "parseParams",
+        "file": "clap.zig",
+        "range": {
+          "l0": 79,
+          "c0": 1,
+          "l1": 79,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsEx",
+        "fqname": "parseParamsEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 86,
+          "c0": 1,
+          "l1": 86,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsComptime",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsComptime",
+        "fqname": "parseParamsComptime",
+        "file": "clap.zig",
+        "range": {
+          "l0": 97,
+          "c0": 1,
+          "l1": 97,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_countParams",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "countParams",
+        "fqname": "countParams",
+        "file": "clap.zig",
+        "range": {
+          "l0": 111,
+          "c0": 1,
+          "l1": 111,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsIntoSlice",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsIntoSlice",
+        "fqname": "parseParamsIntoSlice",
+        "file": "clap.zig",
+        "range": {
+          "l0": 133,
+          "c0": 1,
+          "l1": 133,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsIntoSliceEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsIntoSliceEx",
+        "fqname": "parseParamsIntoSliceEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 141,
+          "c0": 1,
+          "l1": 141,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsIntoArrayList",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsIntoArrayList",
+        "fqname": "parseParamsIntoArrayList",
+        "file": "clap.zig",
+        "range": {
+          "l0": 156,
+          "c0": 1,
+          "l1": 156,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamsIntoArrayListEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamsIntoArrayListEx",
+        "fqname": "parseParamsIntoArrayListEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 164,
+          "c0": 1,
+          "l1": 164,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParam",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParam",
+        "fqname": "parseParam",
+        "file": "clap.zig",
+        "range": {
+          "l0": 177,
+          "c0": 1,
+          "l1": 177,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseParamEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseParamEx",
+        "fqname": "parseParamEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 183,
+          "c0": 1,
+          "l1": 183,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_testParseParams",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "testParseParams",
+        "fqname": "testParseParams",
+        "file": "clap.zig",
+        "range": {
+          "l0": 387,
+          "c0": 1,
+          "l1": 387,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_expectParam",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "expectParam",
+        "fqname": "expectParam",
+        "file": "clap.zig",
+        "range": {
+          "l0": 405,
+          "c0": 1,
+          "l1": 405,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Diagnostic_report",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "report",
+        "fqname": "Diagnostic.report",
+        "file": "clap.zig",
+        "range": {
+          "l0": 542,
+          "c0": 1,
+          "l1": 542,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Diagnostic_reportToFile",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "reportToFile",
+        "fqname": "Diagnostic.reportToFile",
+        "file": "clap.zig",
+        "range": {
+          "l0": 565,
+          "c0": 1,
+          "l1": 565,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_Diagnostic",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "Diagnostic",
+        "fqname": "Diagnostic",
+        "file": "clap.zig",
+        "range": {
+          "l0": 536,
+          "c0": 1,
+          "l1": 571,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_testDiag",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "testDiag",
+        "fqname": "testDiag",
+        "file": "clap.zig",
+        "range": {
+          "l0": 573,
+          "c0": 1,
+          "l1": 573,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_ParseOptions",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "ParseOptions",
+        "fqname": "ParseOptions",
+        "file": "clap.zig",
+        "range": {
+          "l0": 630,
+          "c0": 1,
+          "l1": 644,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parse",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parse",
+        "fqname": "parse",
+        "file": "clap.zig",
+        "range": {
+          "l0": 647,
+          "c0": 1,
+          "l1": 653,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Result",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Result",
+        "fqname": "Result",
+        "file": "clap.zig",
+        "range": {
+          "l0": 677,
+          "c0": 1,
+          "l1": 681,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_parseEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "parseEx",
+        "fqname": "parseEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 743,
+          "c0": 1,
+          "l1": 749,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_ResultEx",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "ResultEx",
+        "fqname": "ResultEx",
+        "file": "clap.zig",
+        "range": {
+          "l0": 863,
+          "c0": 1,
+          "l1": 867,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Positionals",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Positionals",
+        "fqname": "Positionals",
+        "file": "clap.zig",
+        "range": {
+          "l0": 882,
+          "c0": 1,
+          "l1": 887,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_initPositionals",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "initPositionals",
+        "fqname": "initPositionals",
+        "file": "clap.zig",
+        "range": {
+          "l0": 938,
+          "c0": 1,
+          "l1": 943,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_deinitPositionals",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "deinitPositionals",
+        "fqname": "deinitPositionals",
+        "file": "clap.zig",
+        "range": {
+          "l0": 969,
+          "c0": 1,
+          "l1": 969,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_ParamType",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "ParamType",
+        "fqname": "ParamType",
+        "file": "clap.zig",
+        "range": {
+          "l0": 981,
+          "c0": 1,
+          "l1": 981,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_deinitArgs",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "deinitArgs",
+        "fqname": "deinitArgs",
+        "file": "clap.zig",
+        "range": {
+          "l0": 991,
+          "c0": 1,
+          "l1": 991,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Arguments",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Arguments",
+        "fqname": "Arguments",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1007,
+          "c0": 1,
+          "l1": 1012,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_testErr",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "testErr",
+        "fqname": "testErr",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1273,
+          "c0": 1,
+          "l1": 1277,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Help_description",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "description",
+        "fqname": "Help.description",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1319,
+          "c0": 1,
+          "l1": 1319,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_Help_value",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "value",
+        "fqname": "Help.value",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1323,
+          "c0": 1,
+          "l1": 1323,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_Help",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "Help",
+        "fqname": "Help",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1315,
+          "c0": 1,
+          "l1": 1326,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_HelpOptions",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "HelpOptions",
+        "fqname": "HelpOptions",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1328,
+          "c0": 1,
+          "l1": 1379,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_helpToFile",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "helpToFile",
+        "fqname": "helpToFile",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1382,
+          "c0": 1,
+          "l1": 1388,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_help",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "help",
+        "fqname": "help",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1401,
+          "c0": 1,
+          "l1": 1406,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_DescriptionWriter_writeWord",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "writeWord",
+        "fqname": "DescriptionWriter.writeWord",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1541,
+          "c0": 1,
+          "l1": 1541,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_DescriptionWriter_newline",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "newline",
+        "fqname": "DescriptionWriter.newline",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1565,
+          "c0": 1,
+          "l1": 1565,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_DescriptionWriter_ensureIndented",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "ensureIndented",
+        "fqname": "DescriptionWriter.ensureIndented",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1570,
+          "c0": 1,
+          "l1": 1570,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap.zig_DescriptionWriter",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "DescriptionWriter",
+        "fqname": "DescriptionWriter",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1534,
+          "c0": 1,
+          "l1": 1577,
+          "c1": 2
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_printParam",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "printParam",
+        "fqname": "printParam",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1579,
+          "c0": 1,
+          "l1": 1583,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_testHelp",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "testHelp",
+        "fqname": "testHelp",
+        "file": "clap.zig",
+        "range": {
+          "l0": 1610,
+          "c0": 1,
+          "l1": 1610,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_usageToFile",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "usageToFile",
+        "fqname": "usageToFile",
+        "file": "clap.zig",
+        "range": {
+          "l0": 2043,
+          "c0": 1,
+          "l1": 2043,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_usage",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "usage",
+        "fqname": "usage",
+        "file": "clap.zig",
+        "range": {
+          "l0": 2055,
+          "c0": 1,
+          "l1": 2055,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap.zig_testUsage",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "testUsage",
+        "fqname": "testUsage",
+        "file": "clap.zig",
+        "range": {
+          "l0": 2121,
+          "c0": 1,
+          "l1": 2121,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_clap/args.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "clap/args.zig",
+        "fqname": "clap/args.zig",
+        "file": "clap/args.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/args.zig_ExampleArgIterator_next",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "next",
+        "fqname": "ExampleArgIterator.next",
+        "file": "clap/args.zig",
+        "range": {
+          "l0": 3,
+          "c0": 1,
+          "l1": 3,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap/args.zig_ExampleArgIterator",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "ExampleArgIterator",
+        "fqname": "ExampleArgIterator",
+        "file": "clap/args.zig",
+        "range": {
+          "l0": 2,
+          "c0": 1,
+          "l1": 7,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/args.zig_SliceIterator_next",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "next",
+        "fqname": "SliceIterator.next",
+        "file": "clap/args.zig",
+        "range": {
+          "l0": 15,
+          "c0": 1,
+          "l1": 15,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap/args.zig_SliceIterator",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "SliceIterator",
+        "fqname": "SliceIterator",
+        "file": "clap/args.zig",
+        "range": {
+          "l0": 11,
+          "c0": 1,
+          "l1": 22,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_clap/codepoint_counting_writer.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "clap/codepoint_counting_writer.zig",
+        "fqname": "clap/codepoint_counting_writer.zig",
+        "file": "clap/codepoint_counting_writer.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/codepoint_counting_writer.zig_CodepointCountingWriter_init",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "init",
+        "fqname": "CodepointCountingWriter.init",
+        "file": "clap/codepoint_counting_writer.zig",
+        "range": {
+          "l0": 13,
+          "c0": 1,
+          "l1": 13,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/codepoint_counting_writer.zig_CodepointCountingWriter_drain",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "drain",
+        "fqname": "CodepointCountingWriter.drain",
+        "file": "clap/codepoint_counting_writer.zig",
+        "range": {
+          "l0": 19,
+          "c0": 1,
+          "l1": 19,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "type_clap/codepoint_counting_writer.zig_CodepointCountingWriter",
+        "lang": "zig",
+        "kind": "Type",
+        "name": "CodepointCountingWriter",
+        "fqname": "CodepointCountingWriter",
+        "file": "clap/codepoint_counting_writer.zig",
+        "range": {
+          "l0": 3,
+          "c0": 1,
+          "l1": 36,
+          "c1": 2
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/codepoint_counting_writer.zig_utf8CountCodepointsAllowTruncate",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "utf8CountCodepointsAllowTruncate",
+        "fqname": "utf8CountCodepointsAllowTruncate",
+        "file": "clap/codepoint_counting_writer.zig",
+        "range": {
+          "l0": 41,
+          "c0": 1,
+          "l1": 41,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_clap/parsers.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "clap/parsers.zig",
+        "fqname": "clap/parsers.zig",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_string",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "string",
+        "fqname": "string",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 19,
+          "c0": 1,
+          "l1": 19,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_int",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "int",
+        "fqname": "int",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 29,
+          "c0": 1,
+          "l1": 29,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_float",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "float",
+        "fqname": "float",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 85,
+          "c0": 1,
+          "l1": 85,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_enumeration",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "enumeration",
+        "fqname": "enumeration",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 104,
+          "c0": 1,
+          "l1": 104,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_ReturnType",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "ReturnType",
+        "fqname": "ReturnType",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 120,
+          "c0": 1,
+          "l1": 120,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/parsers.zig_Result",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Result",
+        "fqname": "Result",
+        "file": "clap/parsers.zig",
+        "range": {
+          "l0": 124,
+          "c0": 1,
+          "l1": 124,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_clap/streaming.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "clap/streaming.zig",
+        "fqname": "clap/streaming.zig",
+        "file": "clap/streaming.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/streaming.zig_Arg",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Arg",
+        "fqname": "Arg",
+        "file": "clap/streaming.zig",
+        "range": {
+          "l0": 2,
+          "c0": 1,
+          "l1": 2,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/streaming.zig_Clap",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "Clap",
+        "fqname": "Clap",
+        "file": "clap/streaming.zig",
+        "range": {
+          "l0": 22,
+          "c0": 1,
+          "l1": 22,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/streaming.zig_expectArgs",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "expectArgs",
+        "fqname": "expectArgs",
+        "file": "clap/streaming.zig",
+        "range": {
+          "l0": 209,
+          "c0": 1,
+          "l1": 212,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_clap/streaming.zig_expectError",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "expectError",
+        "fqname": "expectError",
+        "file": "clap/streaming.zig",
+        "range": {
+          "l0": 228,
+          "c0": 1,
+          "l1": 231,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/help.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/help.zig",
+        "fqname": "example/help.zig",
+        "file": "example/help.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/help.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/help.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/simple-ex.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/simple-ex.zig",
+        "fqname": "example/simple-ex.zig",
+        "file": "example/simple-ex.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/simple-ex.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/simple-ex.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/simple.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/simple.zig",
+        "fqname": "example/simple.zig",
+        "file": "example/simple.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/simple.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/simple.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/streaming-clap.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/streaming-clap.zig",
+        "fqname": "example/streaming-clap.zig",
+        "file": "example/streaming-clap.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/streaming-clap.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/streaming-clap.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/subcommands.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/subcommands.zig",
+        "fqname": "example/subcommands.zig",
+        "file": "example/subcommands.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/subcommands.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/subcommands.zig",
+        "range": {
+          "l0": 22,
+          "c0": 1,
+          "l1": 22,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/subcommands.zig_mathMain",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "mathMain",
+        "fqname": "mathMain",
+        "file": "example/subcommands.zig",
+        "range": {
+          "l0": 55,
+          "c0": 1,
+          "l1": 55,
+          "c1": 1
+        },
+        "visibility": "Private",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "file_example/usage.zig",
+        "lang": "zig",
+        "kind": "File",
+        "name": "example/usage.zig",
+        "fqname": "example/usage.zig",
+        "file": "example/usage.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      },
+      {
+        "id": "func_example/usage.zig_main",
+        "lang": "zig",
+        "kind": "Func",
+        "name": "main",
+        "fqname": "main",
+        "file": "example/usage.zig",
+        "range": {
+          "l0": 1,
+          "c0": 1,
+          "l1": 1,
+          "c1": 1
+        },
+        "visibility": "Public",
+        "origin_plugin": "zig",
+        "tags": []
+      }
+    ],
+    "edges": [
+      {
+        "src": "file_build.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["build.zig"],
+        "evidence_lines": [56]
+      },
+      {
+        "src": "file_clap.zig",
+        "dst": "file_clap/args.zig",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["clap.zig"],
+        "evidence_lines": [2195]
+      },
+      {
+        "src": "file_clap.zig",
+        "dst": "file_clap/parsers.zig",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["clap.zig"],
+        "evidence_lines": [2196]
+      },
+      {
+        "src": "file_clap.zig",
+        "dst": "file_clap/streaming.zig",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["clap.zig"],
+        "evidence_lines": [2197]
+      },
+      {
+        "src": "file_clap.zig",
+        "dst": "file_clap/codepoint_counting_writer.zig",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["clap.zig"],
+        "evidence_lines": [2198]
+      },
+      {
+        "src": "file_clap.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap.zig"],
+        "evidence_lines": [2200]
+      },
+      {
+        "src": "file_clap/args.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap/args.zig"],
+        "evidence_lines": [34]
+      },
+      {
+        "src": "file_clap/codepoint_counting_writer.zig",
+        "dst": "file_builtin",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap/codepoint_counting_writer.zig"],
+        "evidence_lines": [42]
+      },
+      {
+        "src": "file_clap/codepoint_counting_writer.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap/codepoint_counting_writer.zig"],
+        "evidence_lines": [105]
+      },
+      {
+        "src": "file_clap/parsers.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap/parsers.zig"],
+        "evidence_lines": [128]
+      },
+      {
+        "src": "file_clap/streaming.zig",
+        "dst": "file_clap.zig",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["clap/streaming.zig"],
+        "evidence_lines": [477]
+      },
+      {
+        "src": "file_clap/streaming.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["clap/streaming.zig"],
+        "evidence_lines": [478]
+      },
+      {
+        "src": "file_example/help.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/help.zig"],
+        "evidence_lines": [19]
+      },
+      {
+        "src": "file_example/help.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/help.zig"],
+        "evidence_lines": [20]
+      },
+      {
+        "src": "file_example/simple-ex.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/simple-ex.zig"],
+        "evidence_lines": [49]
+      },
+      {
+        "src": "file_example/simple-ex.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/simple-ex.zig"],
+        "evidence_lines": [50]
+      },
+      {
+        "src": "file_example/simple.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/simple.zig"],
+        "evidence_lines": [36]
+      },
+      {
+        "src": "file_example/simple.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/simple.zig"],
+        "evidence_lines": [37]
+      },
+      {
+        "src": "file_example/streaming-clap.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/streaming-clap.zig"],
+        "evidence_lines": [52]
+      },
+      {
+        "src": "file_example/streaming-clap.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/streaming-clap.zig"],
+        "evidence_lines": [53]
+      },
+      {
+        "src": "file_example/subcommands.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/subcommands.zig"],
+        "evidence_lines": [91]
+      },
+      {
+        "src": "file_example/subcommands.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/subcommands.zig"],
+        "evidence_lines": [92]
+      },
+      {
+        "src": "file_example/usage.zig",
+        "dst": "file_clap",
+        "rel": "Imports",
+        "certainty": "Static",
+        "evidence_paths": ["example/usage.zig"],
+        "evidence_lines": [18]
+      },
+      {
+        "src": "file_example/usage.zig",
+        "dst": "file_std",
+        "rel": "Imports",
+        "certainty": "Comptime",
+        "evidence_paths": ["example/usage.zig"],
+        "evidence_lines": [19]
+      }
+    ]
+  },
+  "manifest": {
+    "generated_at": "2026-08-31T13:43:07Z",
+    "generator_version": "0.1.0",
+    "graph_type": "dependency",
+    "input_root": "zig-clap",
+    "schema_version": 1,
+    "node_count": 85,
+    "edge_count": 24,
+    "resolved_refs": 17,
+    "unresolved_refs": 7,
+    "resolution_rate": 70.8,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "plugins_used": [
+          {
+        "id": "zig",
+        "version": "0.2.0",
+          "schema_min": 1,
+          "schema_max": 1
+          },
+          {
+        "id": "typescript",
+        "version": "0.3.0",
+          "schema_min": 1,
+          "schema_max": 1
+          }
+        ],
+    "cli_args": []
+  },
+  "diagnostics": [
+  ]
+}

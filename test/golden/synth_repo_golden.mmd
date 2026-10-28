@@ -1,0 +1,29 @@
+```mermaid
+graph TD
+    title "Repository Dependencies"
+    file_srcmain_zig["src/main.zig"]
+    style file_srcmain_zig fill:#fff3e0
+    func_srcmain_zig_main["main"]
+    style func_srcmain_zig_main fill:#e1f5fe
+    file_srcauth_zig["src/auth.zig"]
+    style file_srcauth_zig fill:#fff3e0
+    func_srcauth_zig_init["init"]
+    style func_srcauth_zig_init fill:#e1f5fe
+    func_srcauth_zig_authenticate["authenticate"]
+    style func_srcauth_zig_authenticate fill:#e1f5fe
+    type_srcauth_zig_User["User"]
+    style type_srcauth_zig_User fill:#f3e5f5
+    file_srcdatabase_zig["src/database.zig"]
+    style file_srcdatabase_zig fill:#fff3e0
+    func_srcdatabase_zig_connect["connect"]
+    style func_srcdatabase_zig_connect fill:#e1f5fe
+    func_srcdatabase_zig_query["query"]
+    style func_srcdatabase_zig_query fill:#e1f5fe
+    type_srcdatabase_zig_Database["Database"]
+    style type_srcdatabase_zig_Database fill:#f3e5f5
+    file_srcmain_zig --> | comptime file_std
+    file_srcmain_zig --> file_srcauth_zig
+    file_srcmain_zig --> file_srcdatabase_zig
+    file_srcauth_zig --> | comptime file_std
+    file_srcdatabase_zig --> | comptime file_std
+```

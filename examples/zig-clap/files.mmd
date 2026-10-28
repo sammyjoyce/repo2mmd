@@ -1,0 +1,52 @@
+graph LR
+    file__build_2Ezig["build.zig"]
+    style file__build_2Ezig fill:#fff3e0
+    file__clap_2Ezig["clap.zig"]
+    style file__clap_2Ezig fill:#fff3e0
+    file__clap_2Fargs_2Ezig["clap/args.zig"]
+    style file__clap_2Fargs_2Ezig fill:#fff3e0
+    file__clap_2Fcodepoint__counting__writer_2Ezig["clap/codepoint_counting_writer.zig"]
+    style file__clap_2Fcodepoint__counting__writer_2Ezig fill:#fff3e0
+    file__clap_2Fparsers_2Ezig["clap/parsers.zig"]
+    style file__clap_2Fparsers_2Ezig fill:#fff3e0
+    file__clap_2Fstreaming_2Ezig["clap/streaming.zig"]
+    style file__clap_2Fstreaming_2Ezig fill:#fff3e0
+    file__example_2Fhelp_2Ezig["example/help.zig"]
+    style file__example_2Fhelp_2Ezig fill:#fff3e0
+    file__example_2Fsimple_2Dex_2Ezig["example/simple-ex.zig"]
+    style file__example_2Fsimple_2Dex_2Ezig fill:#fff3e0
+    file__example_2Fsimple_2Ezig["example/simple.zig"]
+    style file__example_2Fsimple_2Ezig fill:#fff3e0
+    file__example_2Fstreaming_2Dclap_2Ezig["example/streaming-clap.zig"]
+    style file__example_2Fstreaming_2Dclap_2Ezig fill:#fff3e0
+    file__example_2Fsubcommands_2Ezig["example/subcommands.zig"]
+    style file__example_2Fsubcommands_2Ezig fill:#fff3e0
+    file__example_2Fusage_2Ezig["example/usage.zig"]
+    style file__example_2Fusage_2Ezig fill:#fff3e0
+    file__std["std"]
+    file__builtin["builtin"]
+    file__clap["clap"]
+    file__build_2Ezig -->|comptime| file__std
+    file__clap_2Ezig --> file__clap_2Fargs_2Ezig
+    file__clap_2Ezig --> file__clap_2Fparsers_2Ezig
+    file__clap_2Ezig --> file__clap_2Fstreaming_2Ezig
+    file__clap_2Ezig --> file__clap_2Fcodepoint__counting__writer_2Ezig
+    file__clap_2Ezig -->|comptime| file__std
+    file__clap_2Fargs_2Ezig -->|comptime| file__std
+    file__clap_2Fcodepoint__counting__writer_2Ezig -->|comptime| file__builtin
+    file__clap_2Fcodepoint__counting__writer_2Ezig -->|comptime| file__std
+    file__clap_2Fparsers_2Ezig -->|comptime| file__std
+    file__clap_2Fstreaming_2Ezig --> file__clap_2Ezig
+    file__clap_2Fstreaming_2Ezig -->|comptime| file__std
+    file__example_2Fhelp_2Ezig --> file__clap
+    file__example_2Fhelp_2Ezig -->|comptime| file__std
+    file__example_2Fsimple_2Dex_2Ezig --> file__clap
+    file__example_2Fsimple_2Dex_2Ezig -->|comptime| file__std
+    file__example_2Fsimple_2Ezig --> file__clap
+    file__example_2Fsimple_2Ezig -->|comptime| file__std
+    file__example_2Fstreaming_2Dclap_2Ezig --> file__clap
+    file__example_2Fstreaming_2Dclap_2Ezig -->|comptime| file__std
+    file__example_2Fsubcommands_2Ezig --> file__clap
+    file__example_2Fsubcommands_2Ezig -->|comptime| file__std
+    file__example_2Fusage_2Ezig --> file__clap
+    file__example_2Fusage_2Ezig -->|comptime| file__std
